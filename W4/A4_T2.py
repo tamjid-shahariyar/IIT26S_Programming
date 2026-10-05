@@ -5,7 +5,7 @@ stop_val = int(input("Insert stopping value: "))
 print("Starting for-loop:")
 for i in range(start_val, stop_val + 1):
     if i == stop_val:
-        print(i)  # Last number, no hyphen
+        print(i) 
     else:
         print(i, end="-")
 print("Program ending.")
