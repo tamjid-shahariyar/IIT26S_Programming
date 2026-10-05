@@ -1,0 +1,23 @@
+correct_number = 23
+
+# Start with an empty guess so the loop can begin
+guess = 0
+
+# Keep looping as long as the guess is NOT correct
+while guess != correct_number:
+    
+    # Ask the user for a number
+    guess = int(input("Enter an integer: "))
+    
+    if guess == correct_number:
+        print("You guessed correctly!")
+        print("Game ends here")
+        
+    elif guess < correct_number:
+        print("The number is higher than your guess")
+        
+    else:
+        print("The number is lower than your guess")
+
+# This line runs after the loop finishes
+print("This prints at the end, after the while loop.")
