@@ -14,4 +14,4 @@ while num != 1:
 
 print(output)
 print(f"Sequence had {steps} total steps.")
-print("Program ending.")
+print("\nProgram ending.")
