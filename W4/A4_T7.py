@@ -6,20 +6,11 @@ steps = 0
 
 while len(num_str) > 1:
     product = 1
-    step_display = ""
-    
-    for i, digit in enumerate(num_str):
+    for digit in num_str:
         product *= int(digit)
-        if i == len(num_str) - 1:
-            step_display += digit
-        else:
-            step_display += digit + "\\*"
-    
-    if steps == 0:
-        print(f"{step_display}- {product}")
-    else:
-        print(f"{step_display} = {product}")
-    
+
+    print(f"{'*'.join(num_str)} = {product}")
+
     num_str = str(product)
     steps += 1
 
