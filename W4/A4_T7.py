@@ -1,5 +1,5 @@
 print("Program starting.")
-print("Check multiplicative persistence.")
+print("\nCheck multiplicative persistence.")
 num_str = input("Insert an integer: ")
 
 steps = 0
@@ -9,7 +9,7 @@ while len(num_str) > 1:
     for digit in num_str:
         product *= int(digit)
 
-    print(f"{'*'.join(num_str)} = {product}")
+    print(f"{' * '.join(num_str)} = {product}")
 
     num_str = str(product)
     steps += 1
